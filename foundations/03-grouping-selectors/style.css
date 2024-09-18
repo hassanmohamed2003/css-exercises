@@ -1,0 +1,17 @@
+.first-click{
+    background-color: black;
+    color: white;
+}
+
+.second-click{
+    background-color: yellow;
+    color: black;
+}
+
+.first-click,
+.second-click{
+    font-size: 30px;
+    font-family: "Helvetica", "Times New Roman", sans-serif;
+}
+
+/* forgot to add font family, and did button instead of first and second click together */
