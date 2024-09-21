@@ -12,6 +12,22 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  /* didnt have this */
+  padding: 8px;
+}
+
+.first-header{
+  display: flex;
+  align-items: center;
+}
+
+.second-header{
+  display: flex;
+  /* didnt have this, 10 not 16 */
+  gap: 16px;
+  align-items: center;
 }
 
 .profile-image {
@@ -45,4 +61,11 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+    /* didnt have this, 10 not 16 */
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }
+
+    /* also made changes to notification and pfp that werent needed such as padding and height */
