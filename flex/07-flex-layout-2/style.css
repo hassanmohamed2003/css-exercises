@@ -1,29 +1,96 @@
+html,body{
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+
+
+  /*
+  display: flex;
+  flex-direction: column
+  */
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: left center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+
+
+  /* they only have
+
+  display flex and flex direction column */
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+main{
+  flex-grow: 1;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  margin-top: auto;
 }
 
 .sidebar {
-  width: 300px;
+  width: 500px;
   background: royalblue;
   box-sizing: border-box;
+}
+
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* no justify content in TOP answesr and gap is larger 32 */
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  height: 400px;
+  width: 400px;
 }
+
+/* looks like it , think its fine even though they did it cleaner*/
